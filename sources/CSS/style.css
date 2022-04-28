@@ -76,7 +76,11 @@
     .colour {
         position: relative;
     }
-    
+
+    .colour-new {
+        position: relative;
+        margin-top: 55px;
+    }
 
     /*Überschrift "Colour Pallets" margin 0 weil die margin die colour position beeinflusst hat. Absolute damit die colour-pallet boxen ganz nach oben rutschen
     und um an den oberen Rand zu kommen damit man mit top/left positionieren kann*/
