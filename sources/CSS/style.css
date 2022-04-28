@@ -1,0 +1,177 @@
+/* Allgemeines Styling*/
+
+    * {
+        font-family: inter;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+        text-decoration-color: rgb(175, 175, 175);
+    }
+
+    a:hover {
+        text-decoration: underline;
+        text-decoration-color: rgb(175, 175, 175);
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 600;
+    }
+
+    ul {
+        font-size: 30px;
+        padding: 0;
+    }
+
+/* Header Styling*/
+
+    header {
+        width: 100%;
+        height: 136px;
+        background-color: #F5F5F5;
+        position: relative;
+        top: 0;
+    }
+
+    header h1 {
+        position: relative;
+        left: 136px;
+        margin: 0px;
+        top: 12px;
+    }
+
+    header li {
+    display: inline;
+    margin-right: 225px;
+    margin-left: 136px;
+    font-weight: 600;
+    }
+
+    header ul {
+        position: relative;
+        margin-top: 32px;
+    }
+
+    li.a {
+    margin: 0px 122px;
+    }
+
+/*Main Styling*/
+
+    main {
+        position: relative;
+        top: 64px;
+        margin: auto auto;
+        width: 1800px;
+    }
+
+    
+
+    /*Colour Positioning Styling*/
+    
+    /*colour ist der gesamtcontainer für den bereich der Farben*/
+    .colour {
+        position: relative;
+    }
+    
+
+    /*Überschrift "Colour Pallets" margin 0 weil die margin die colour position beeinflusst hat. Absolute damit die colour-pallet boxen ganz nach oben rutschen
+    und um an den oberen Rand zu kommen damit man mit top/left positionieren kann*/
+    main h2 {
+        font-size: 30px;
+        margin: 0px;
+        position: absolute;
+        top: 20px;
+        left:775px;
+        font-weight: 600;
+    }
+    
+    /*Name der Colour Pallet. Steckt inside colour-pallets box und ist absolute positioniert um ganz nach oben zu rutschen und mit top/left positioniert zu werden. margin beeinflusste
+    position von colour-pallets box und wurde daher auf 0 gesetzt*/
+    main h3 {
+        font-size: 28px;
+        font-weight: 500;
+        position: absolute;
+        margin: 0px;
+        top: 25px;
+        left: 35px;
+    }
+    
+    /*Sind aufgrund der absolute position von main h2 am oberen rand der colour box und werden dann verschoben. 
+    left nur auf 50 wegen der border mit 3px, eigentlich 53 px */
+    .colour-pallets {
+        width: 686px;
+        height: 334px;
+        border: 3px solid rgb(129, 129, 129);
+        border-radius: 30px;
+        display: inline-block;
+        position: relative;
+        top:100px;
+        left: 50px;
+    }
+
+    /*Die colour pallets haben auch die Klassen left-pallet für die linke und right-pallet für die rechte, um individuelle margins einzustellen*/
+    .left-pallet {
+        margin-right: 144px;
+    }
+
+    .right-pallet {
+        margin-left: 144px;
+    }
+ 
+    /*Die Tatsächlichen Farbboxen, die die Farben der Farbpalette darstellen. Auf die rutschen nach ganz oben in der Box weil main h3 absolute positioniert ist*/
+    .colour-box {
+        width:170px;
+        height:170px;
+        display: inline-block;
+        position:relative;
+        top: 91px;
+        left: 20px;
+        margin: 0px 20px;
+        background-color: orange;
+    }
+    
+    /*Die Farbcodes werden im standard flow direkt unter den standard farbboxen positioniert also distanz obere kante colour-pallets = colour-box height + span top
+    die box der codes wird genausobreit wie die farbboxen gemacht und der text centered, damit man die gleichen werte für margin und left nehmen kann*/
+    .colour-pallets span {
+        text-align:center;
+        width:170px;
+        font-size: 25px;
+        font-weight: 400;
+        position: relative;
+        display: inline-block;
+        top: 114px;
+        margin: 0px 20px;
+        left:20px;
+    }
+
+    /*Farbboxen einfärben*/
+
+    .grey-blue {
+        background-color: #D7EAF3;
+    }
+
+    .light-blue {
+        background-color: #77B5D9;
+    }
+
+    .blue {
+        background-color: #14397D;
+    }
+
+
+    .beige {
+        background-color: #EFE6D5;
+    }
+
+    .green {
+        background-color: #9DBEB7;
+    }
+
+    .red {
+        background-color: #E73213;
+    }
+
+/*Footer Styling*/
